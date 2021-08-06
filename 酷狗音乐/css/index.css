@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#box-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    --themeColor: #29abd3;
+    background-image: url(../imgs/bg1.jpeg);
+    background-size: 100% 100%;
+}
+#music-box{
+    margin: 0 auto;
+    border-radius: 5px; 
+    border: solid 2px #29abd3;
+    height: 480px;
+    width: 800px;
+    border-bottom: 1px solid var(--themeColor);
+    background-color: rgba(255, 255, 255, 0.5);    
+}
+#music-head{
+    width: 800px;
+    height: 60px;
+    background:#29abd3;
+}
+/* div的盒子 */
+#music-letter{
+    color: white;
+    font-weight: 300;
+    line-height: 55px;
+    position: relative;
+}
+/* 放大镜样式 */
+.search-bar-input{
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 300px;
+    height: 30px;
+    border: 0px;
+    border-radius: 20px;
+    text-indent: 15px;
+    line-height: 55px;
+    outline: none;
+    background: url(imgs/zoom.png) 270px center no-repeat white;
+}
+/* 放大镜图片*/
+.search-bar-img{
+    position: absolute;
+    top: 19px;
+    right: 0;
+    cursor: pointer;
+}
+/* 中间容器的盒子 */
+.a-box{
+    display: flex;
+}
+.title-left{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    height: 417px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    overflow-y: auto;
+ }
+/* 摇晃杆 */
+.center-head-img{
+    transform-origin: 12px 12px;
+    transition:all 2s;
+    position: absolute;
+    left:183px;
+ }
+.center-head-img1{
+    transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(20deg);
+   
+ }
+ .title-left>ul>li:nth-child(odd){
+    width: 180px;
+    font-size: 16px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+ }
+ /* 最左侧的音乐播放样式 */
+ #Aul>li>span{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(/imgs/table.png) no-repeat;
+    background-position: -19px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* 最左侧的视频播放样式 */
+#Aul>li>div{
+    width: 20px;
+    height: 20px;
+    float: right;
+    background: url(/imgs/table.png) no-repeat;
+    background-position: 0px -46px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+ .title-center{
+    flex: 2;  
+    position: relative;
+ }
+ /* 中间的转盘样式 */
+ .box-CD{
+    position: absolute;
+    left: 73px;
+    top: 121px;
+ }
+ .box-CD1{
+    animation: move 5s linear infinite;
+ }
+ /* 中间歌手头像的样式 */
+ .box-zp-cours{
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    left: 130px;
+    top: 178px;
+    background-size: 64px;
+    background-image: url(/imgs/cosplay.png);
+ }
+ .box-zp-cours1{
+    animation: move 5s linear infinite;
+ }
+ /* 转盘的动画样式 */
+ @keyframes move{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+ }
+ /* 右侧的内容样式盒子 */
+.title-right{
+    flex: 1;
+    height: 417px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-left:dashed 2px  #29abd3 ;
+}
+.title-right>ul>li{
+    font-size: 12px;
+    color: white;
+}
+.title-right>ul>img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+#adius-footer{
+    height: 60px;
+    width: 800px;
+    background-color: #fff;
+}
+/* 底部的音乐播放界面 */
+.bottom-audio{
+    width: 800px;
+    border: 0;
+}
+
+
+
+
+
